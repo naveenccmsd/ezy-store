@@ -1,4 +1,6 @@
 !platforms/android/build/outputs/apk/*
+!/platforms/android/build/outputs/apk/*
+!/platforms/android/build/outputs/apk/android-debug-unaligned.apk
 /foo/*
 /node_modules/*
 /platforms/*
