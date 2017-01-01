@@ -3,4 +3,4 @@
 /platforms/*
 /plugins/*
 /hooks/*
-!/platforms/android/build/outputs/apk/*
+!platforms/android/build/outputs/apk/*
