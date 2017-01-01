@@ -1,0 +1,83 @@
+
+<ion-view view-title="EZy Store+">
+    <ion-content>
+        <div class="bar bar-subheader bar-stable static text-center">
+            <strong class="title">Product Lists</strong>
+        </div>
+        <div class="im-wrapper">
+            
+            
+            <!-- Icon List -->
+        <!--     <h4 class="border-top"><i class="icon ion-nuclear"></i> Icon List</h4>
+            <div class="list">
+                <a class="item item-icon-left">
+                    <i class="icon ion-email"></i> Check mail
+                </a>
+                <a class="item item-icon-left">
+                    <i class="icon ion-mic-a"></i> Record album
+                    <span class="item-note">
+                        Grammy
+                    </span>
+                </a>
+                <a class="item item-icon-left">
+                    <i class="icon ion-person-stalker"></i> Friends
+                    <span class="badge badge-assertive">0</span>
+                </a>
+            </div> -->
+            
+           
+            <!-- Avatar List -->
+            <h4 class="border-top"><i class="icon ion-android-happy"></i> List</h4>
+            <div class="list">
+                <a class="item item-avatar" style="border-bottom:solid 1px #ccc;cursor: auto;" ng-repeat="item in productList" ng-click="viewProduct('{{item.productID}}')">
+                    <img ng-src="{{item.image}}">
+                    <h2>{{item.title}}</h2>
+                    <p>{{item.description}}</p>
+                    <p> $ {{item.price}}</p>
+                     <span style="float:right;margin-top: -2%;cursor: pointer;"> <i class="icon ion-edit"></i> </span>
+                </a>
+               
+            </div>
+            
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+    <script id="templates/modal.html" type="text/ng-template">
+      <ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-positive">
+          <h1 class="title">New Product</h1>
+          <button class="button button-clear button-primary" ng-click="modal.hide()">X</button>
+        </ion-header-bar>
+        <ion-content class="padding">
+          <div class="list">
+            <label class="item item-input">
+              <span class="input-label">Product Title</span>
+              <input ng-model="newItem.tittle" type="text">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Description</span>
+              <input ng-model="newItem.description" type="text">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Price</span>
+              <input ng-model="newItem.price" type="text">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Barcode Id</span>
+              <input ng-model="newItem.productID" type="text">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Product Image</span>
+              <button ng-click="updateImage()"><img ng-src="{{newItem.image}}" style="width: 100px;"  /> </button>
+            </label>
+            <button class="button button-full button-positive" ng-click="createProduct()">ADD</button>
+          </div>
+        </ion-content>
+      </ion-modal-view>
+    </script>
+
+    </ion-content>
+    <div class="plusnewad" ng-click="addNewProduct()"><i class="icon ion-ios-plus-empty"></i> </div>
+</ion-view>

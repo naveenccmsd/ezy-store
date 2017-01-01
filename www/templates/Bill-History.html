@@ -1,0 +1,47 @@
+﻿
+<ion-view view-title="Ionic Components+">
+    <ion-content>
+        <div class="bar bar-subheader bar-stable static text-center">
+            <strong class="title">Billing History</strong>
+        </div>
+        <div class="im-wrapper">
+            
+            
+            <!-- Icon List -->
+        <!--     <h4 class="border-top"><i class="icon ion-nuclear"></i> Icon List</h4>
+            <div class="list">
+                <a class="item item-icon-left">
+                    <i class="icon ion-email"></i> Check mail
+                </a>
+                <a class="item item-icon-left">
+                    <i class="icon ion-mic-a"></i> Record album
+                    <span class="item-note">
+                        Grammy
+                    </span>
+                </a>
+                <a class="item item-icon-left">
+                    <i class="icon ion-person-stalker"></i> Friends
+                    <span class="badge badge-assertive">0</span>
+                </a>
+            </div> -->
+            
+           
+            <!-- Avatar List -->
+            <h4 class="border-top"><i class="icon ion-android-happy"></i> Your Orders</h4>
+            <div class="list">
+                <a class="item item-avatar" style="border-bottom:solid 1px #ccc;" ng-repeat="item in BillList" ng-click="viewHistory('{{item.tmp_billID}}','{{item.transaction.transactionID}}')">
+                    <img ng-src="{{item.tmp_img}}">
+                    <h2>{{item.tmp_billID}}</h2>
+                    <p>{{item.totalcount}} items  for ${{item.totalcost}} </p>
+                     <span style="float:right;margin-top: -2%;"> <i class="icon ion-chevron-right"></i> </span>
+                </a>
+               
+            </div>
+            
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+    </ion-content>
+</ion-view>

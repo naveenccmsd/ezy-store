@@ -1,0 +1,45 @@
+<ion-view view-title="Billing">
+  <div class="bar bar-subheader row" ng-click="opencartlist()" ng-if="checkoutlist.items.length != 0" style="margin-left: 0px;">
+        <div class="col col-45" style="float: left;padding: 10px; ">
+            <i class="icon ion-android-cart" style="font-size:20px;margin-left:15px">
+            <span class="badge badge-assertive cart-count" style="" >{{totalcount}}</span>
+          </i>
+            <span style="font-size:12px;margin-left:2%;">$ {{totalcost }}</span>
+        </div>
+        <div class="col col-10" style="padding:0px;font-size:25px;text-align:center">
+        </div>
+        <div class="col col-45" style="float:left;padding:0px;padding: 0px; bottom: 5px; position: absolute; right: 8px;">
+            <button class="button buttom-small button-outline button-assertive" style="padding: 0px;float:right;width:100px;max-width:200px;height: 35px;min-height: 20px;" ng-click="checkout_product()">
+                Checkout
+            </button>
+        </div>
+    </div>
+    <ion-content class="has-subheader" >
+        <div class="YCrZ" style="height:100px;"  ng-repeat="item in products"  >
+            <div class="kxWe" ><span class="imageloader loaded" ><img ng-src="{{item.image}}" class="_1ARc" ></span></div>
+            <div class="_3wKr" >
+                <p class="V-9d" >{{item.title}}</p>
+                <p class="_1355" ><span>{{item.discription}}</span></p>
+                <ul class="_3Phb" >
+                    <li class="oUP0"><b >${{item.itemTprice}}</b></li>
+                </ul>
+                <div class="_3HwK" >
+                    <button class="eUSi" ng-click="updateProductData(item,'-')">
+                        <svg class="_1_5f _3ZYo" style="display:inline-block;height:24px;width:24px;user-select:none;transition:all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;fill:rgba(0, 0, 0, 0.87);" viewBox="0 0 24 24" >
+                            <path d="M19 13H5v-2h14v2z"></path>
+                        </svg>
+                    </button>
+                    <p class="_1isP" ng-model="item.count">{{item.count}}</p>
+                    <button class="eUSi" ng-click="updateProductData(item,'+')">
+                        <svg class="_1_5f mqZC" style="display:inline-block;height:24px;width:24px;user-select:none;transition:all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;fill:rgba(0, 0, 0, 0.87);" viewBox="0 0 24 24" data-reactid=".vy02ebthc0.2.0.0.1.0.$/=1$5.$5.0.0.0.$0.1.3.2.0">
+                            <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div style="height: 64px"></div>
+    </ion-content>
+        <div class="plusnewad" ng-click="openbarcode_scanner()"><i class="icon ion-ios-plus-empty"></i> </div>
+
+</ion-view>

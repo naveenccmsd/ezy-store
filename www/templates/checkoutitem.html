@@ -1,0 +1,26 @@
+﻿
+<ion-view view-title="Billing">
+    <ion-content>
+        <div class="bar bar-subheader bar-stable static text-center">
+            <strong class="title"><span style="float:left">Billing ID : <span style="font-size: 12px;font-weight: normal;">{{billingID}}</span></span></strong>
+             <strong class="title"><span style="float:right">Total : ${{totalcost}} </span></strong>
+        </div>
+        <div class="im-wrapper" style="margin-bottom: 20px;">
+            <h4 class="no-border no-padding-bottom" style="float:left;">List Item</h4>
+            <button class="button icon-right button-balanced" style="float:right;cursor:pointer;min-height: 30px;min-width: 50px;width: 100px;padding: 0;" ng-click="paynow()" ng-if="displaypayNow==true">Pay Now</button>
+            <span class="icon-right" ng-if="displaypayNow==false" style="float:right;"><span style="font-weight: bold;">Transaction ID : </span> <span style="font-style:italic"> {{transactionID}}</span></span>
+            <!-- <strong>Tap an item</strong> -->
+        </div>
+        <ion-list class="animate-ripple">
+            <ion-item nav-clear menu-close class="item-icon-right item-avatar" ng-repeat="item in products">
+                <img ng-src="{{item.image}}">
+                <h2>{{item.title}}</h2>
+                <p>{{item.discription}}</p>
+                <p>${{item.price}} x{{item.count}}</p>
+                <p class="icon" style="font-size: 20px;">${{item.itemTprice}}</p>
+            </ion-item>
+        </ion-list>
+        <br />                
+    </ion-content>
+     <div class="plusnewad"  ng-if="displaypayNow==false && newBill==true" style="background: green; cursor: pointer;" ng-click="new_bill()"><i class="icon ion-checkmark"></i>New Bill </div>
+</ion-view>

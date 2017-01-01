@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+    <title>EZY-Store</title>
+    <link href="https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic" rel="stylesheet">
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="lib/ionic-material/dist/ionic.material.min.css" rel="stylesheet" />
+    <link href="lib/sweet-alert/jsbin.sovase.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <!-- <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'> -->
+    <!-- <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'> -->
+    <!-- <link rel="stylesheet" href="css/credit_style.css"> -->
+
+    <!-- <link href="lib/paymetSample/style.css" rel="stylesheet" type="text/css" media="all"> -->
+    <script type="text/javascript" src="lib/paymetSample/jquery.min.js"></script>
+    <!-- <script id="_fbn_projs" type="text/javascript" src="lib/paymetSample/C6ADVKE.json"></script></head> -->
+    <script async="" type="text/javascript" src="lib/paymetSample/fancybar.js" id="_fancybar_js"></script>  
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <!-- ionic/angularjs js -->
+    <script src="lib/sweet-alert/jsbin.js"></script>
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic-material/dist/ionic.material.min.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="cordova.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBjiaLXZRXWSj5GWpxpgrmJEylsuHJHYvQ",
+        authDomain: "ezy-store.firebaseapp.com",
+        databaseURL: "https://ezy-store.firebaseio.com",
+        storageBucket: "ezy-store.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>    
+
+    
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers/AppCtrl.js"></script>
+    <script src="js/controllers/LoginCtrl.js"></script>
+    <script src="js/controllers/billListsCtrl.js"></script>
+    <script src="js/controllers/checkoutItemCtrl.js"></script>
+    <script src="js/controllers/payCtrl.js"></script>
+    <script src="js/controllers/InkCtrl.js"></script>
+    <script src="js/controllers/billHistoryCtrl.js"></script>
+    <script src="js/controllers/SetupCtrl.js"></script>
+    <script src="js/controllers/ExtensionsCtrl.js"></script>
+    <script src="js/controllers/MotionCtrl.js"></script>
+    <script src="js/controllers/productCtrl.js"></script>
+
+    <script src="js/service.js"></script>
+</head>
+<body ng-app="starter">
+    <!--<ion-pane>
+        <ion-header-bar class="bar-stable">
+            <h1 class="title">Ionic Blank Starter</h1>
+        </ion-header-bar>
+        <ion-content>
+        </ion-content>
+    </ion-pane>-->
+    <ion-nav-view></ion-nav-view>
+    <div id="modal" class=""></div>
+</body>
+</html>

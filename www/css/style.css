@@ -1,0 +1,380 @@
+
+/* Cart Migration */
+/* Empty. Add your own CSS if you like */
+.YCrZ {
+    width: 100%;
+    overflow: hidden;
+    height: 100px;
+    border-bottom: 1px solid #cdcdcd;
+    position: relative;
+}
+.kxWe {
+    width: 100px;
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+._1ARc, .g896 {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+._1ARc {
+    max-width: 100%;
+    max-height: 70px;
+}
+._3HwK, ._3wKr {
+    position: absolute;
+}
+
+._3wKr {
+    padding-bottom: 15px;
+    top: 0;
+    padding-left: 100px;
+}
+
+._3wKr, .g896 {
+    height: 100%;
+    width: 100%;
+}
+.V-9d {
+    height: 19px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+._3CrU, .oUP0, .V-9d {
+    font-size: .95em;
+}
+._1355 {
+    margin-top: 7px;
+}
+._3CrU, ._3FY7, ._1355 {
+    color: #828282;
+}
+._1isP, ._3Phb {
+    position: absolute;
+    display: inline-block;
+}
+._3Phb {
+    padding: 0;
+    bottom: 10px;
+    margin: 0;
+}
+._3HwK {
+    bottom: 1px;
+    right: 0;
+}
+._3HwK, ._3wKr {
+    position: absolute;
+}
+.eUSi {
+    min-width: 48px;
+    height: 48px;
+    background: #fff;
+    border: none;
+    z-index: 1;
+    position: relative;
+    background-color: transparent;
+    line-height: 36px;
+}
+
+
+._3ZYo {
+    border: 1px solid #8c8c8c;
+}
+._1_5f {
+    vertical-align: bottom;
+    fill: #8c8c8c!important;
+    border-radius: 50%;
+    width: 26px!important;
+    height: 26px!important;
+    margin-bottom: 5px;
+}
+._1isP {
+    text-align: center;
+    font-size: 16px;
+    top: 15px;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+._1isP, ._3Phb {
+    position: absolute;
+    display: inline-block;
+}
+
+.eUSi {
+    min-width: 48px;
+    height: 48px;
+    background: #fff;
+    border: none;
+    z-index: 1;
+    position: relative;
+    background-color: transparent;
+    line-height: 36px;
+}
+
+.mqZC {
+    border: 1px solid #8c8c8c;
+}
+._1_5f {
+    vertical-align: bottom;
+    fill: #8c8c8c!important;
+    border-radius: 50%;
+    width: 26px!important;
+    height: 26px!important;
+    margin-bottom: 5px;
+}
+.plusnewad {
+    height: 56px;
+    width: 56px;
+    background: #db4437;
+    border-radius: 50%;
+    position: fixed;
+    right: 13px;
+    bottom: 13px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 30px;
+    color: white;
+    box-shadow: 0 0 7px #888
+}
+.cart-count {
+    left: 25px;
+    width: 16px;
+    margin-left: 8px;
+    padding: 0px;
+    position: absolute;
+    top: 4%;
+    right: calc(50% - 26px);
+    height: auto;
+    font-size: 12px;
+    line-height: 16px;
+    z-index: 1;
+    display: inline-block;
+    min-width: 10px;
+    border-radius: 10px;
+    vertical-align: baseline;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+
+/*MyIONIC Utilities */
+/* Empty. Add your own CSS if you like */
+/* Utilities */
+
+.link {
+    color: #116262;
+    font-weight: bold;
+}
+
+h4 {
+    color: #116262;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+h4:first-child {
+    border-top: none;
+    padding-top: initial;
+}
+
+.title-bordered {
+    border-top: solid 2px #bbb;
+    padding-top: 30px;
+}
+
+p {
+    color: #555;
+    margin: 0 0 25px;
+}
+
+.no-border {
+    border: none;
+}
+
+.static {
+    position: static;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.border-top {
+    border-top: solid 1px #ccc;
+    padding-top: 30px;
+}
+
+.blue-grey-900 {
+    background-color: #263238 !important;
+    color: #fff;
+}
+/* Menu */
+
+.menu .bar.bar-header.expanded {
+    background-image: url('../img/material-graphite.jpg');
+    background-size: 120%;
+    background-position: 0%;
+    transition: all .5s ease-in-out;
+}
+
+.menu.menu-left * {
+    font-weight: bold;
+}
+
+.item-radio input:checked ~ .item-content {
+    background: transparent;
+}
+
+.menu-open .ion-navicon {
+    transform: rotate(-360deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-open .ion-navicon:before {
+    content: "\f2ca";
+}
+
+.item.item-radio .radio-icon {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.item.item-radio:active .radio-icon {
+    opacity: 0;
+    transform: scale(1.6);
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.directions.button-bar {
+    margin: 0 auto;
+    width: 33.333%;
+}
+
+.directions.button-bar button {
+    line-height: 26px;
+}
+
+.ion-arrow-right-c.top-left:before {
+    transform: rotate(-135deg);
+}
+
+.ion-arrow-right-c.top-right:before {
+    transform: rotate(-45deg);
+}
+
+.ion-arrow-right-c.bottom-left:before {
+    transform: rotate(-225deg);
+}
+
+.ion-arrow-right-c.bottom-right:before {
+    transform: rotate(45deg);
+}
+
+#modal {
+    background-color: #ef4e3a;
+    border-radius: 100%;
+    box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    height: 50%;
+    bottom: 0;
+    opacity: 0;
+    width: 700px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.expand #modal {
+    background-color: #DBDBDB;
+    border-radius: 0;
+    border-top: solid 4px #ef4e3a;
+    opacity: 1;
+    z-index: 9;
+}
+/* CODE */
+
+.code {
+    color: #333;
+    font-family: monospace;
+    padding: 10px;
+    white-space: pre;
+}
+
+.code-wrapper {
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+.code-wrapper::before {
+    color: #1B5E20;
+    font-family: "Ionicons";
+    speak: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: '\f216 ';
+}
+
+.code-wrapper.active::before {
+    content: '\f207 ';
+}
+
+.code-wrapper .toggle {
+    color: #4CAF50;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 8px;
+    text-decoration: underline;
+}
+
+.code-wrapper .code {
+    opacity: 0;
+    margin-top: -20px;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: 0.1s all ease-in-out;
+    z-index: 9999999999;
+}
+
+.code-wrapper.code-wrapper-last .code {
+    position: relative;
+}
+
+.code-wrapper.active .code {
+    background: #f9f9f9;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    left: 16px;
+    height: initial;
+    margin-top: 15px;
+    padding: 15px;
+    right: 16px;
+    opacity: 1;
+    transition: 0.3s all ease-in-out;
+    width: initial;
+}
+
+.popover {
+    left: initial !important;
+    right: 16px !important;
+    top: 16px !important;
+}
+.platform-android .popover{
+margin-top:10px;
+}
